@@ -1,0 +1,14 @@
+#define EV_STANDALONE 1
+#define EV_PERIODIC_ENABLE 0
+#define EV_STAT_ENABLE 0
+#define EV_PREPARE_ENABLE 0
+#define EV_EMBED_ENABLE 0
+#define EV_CHECK_ENABLE 0
+#define EV_IDLE_ENABLE 0
+#define EV_FORK_ENABLE 0
+#define EV_CLEANUP_ENABLE 0
+#define EV_SIGNAL_ENABLE 0
+#define EV_CHILD_ENABLE 0
+#define EV_ASYNC_ENABLE 0
+
+#include "libev/ev.c"

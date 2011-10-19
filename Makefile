@@ -7,8 +7,8 @@ PREFIX  = /usr/local
 BINDIR  = $(PREFIX)/bin
 MANDIR  = $(PREFIX)/share/man
 
-CFLAGS  = -O2 -g -std=c99 -fno-strict-aliasing -Wall -W -D_GNU_SOURCE
-LDFLAGS = -lssl -lcrypto -lev
+CFLAGS  = -O2 -g -std=c99 -fno-strict-aliasing -Wall -W -D_GNU_SOURCE -I.
+LDFLAGS = -lssl -lcrypto
 OBJS    = stud.o ringbuffer.o
 
 all: realall
