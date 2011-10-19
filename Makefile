@@ -3,7 +3,7 @@
 # USE_SHARED_CACHE   :   enable/disable a shared session cache (disabled by default)
 
 DESTDIR =
-PREFIX  = /usr/local
+PREFIX  = /usr/
 BINDIR  = $(PREFIX)/bin
 MANDIR  = $(PREFIX)/share/man
 
@@ -37,8 +37,8 @@ stud: $(OBJS)
 install: $(ALL)
 	install -d $(DESTDIR)$(BINDIR)
 	install stud $(DESTDIR)$(BINDIR)
-	install -d $(DESTDIR)$(MANDIR)/man8
-	install -m 644 doc/stud.8 $(DESTDIR)$(MANDIR)/man8
+	#install -d $(DESTDIR)$(MANDIR)/man8
+	#install -m 644 doc/stud.8 $(DESTDIR)$(MANDIR)/man8
 
 clean:
 	rm -f stud $(OBJS)
