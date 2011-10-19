@@ -1,0 +1,16 @@
+Source: stud
+Section: net
+Priority: optional
+Maintainer: Denis Bilenko <denis.bilenko@gmail.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.1
+Homepage: https://github.com/bumptech/stud
+#Vcs-Git: git@github.com:denik/stud.git
+
+Package: stud
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: network proxy that terminates TLS/SSL connections
+ stud is a network proxy that terminates TLS/SSL connections and forwards
+ the unencrypted traffic to some backend. It's designed to handle 10s of
+ thousands of connections efficiently on multicore machines.
